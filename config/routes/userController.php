@@ -1,4 +1,8 @@
 <?php
+namespace App\Controller
+
+  use Symfony\Component\Routing\Annotation\Route
+
 #[Route('/users', name: "user_liost", methods: ['GET'])]
   public function listUsers (userRepository $userRepo)
   {
